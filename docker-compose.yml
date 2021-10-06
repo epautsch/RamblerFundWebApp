@@ -10,6 +10,9 @@ services:
       - 8000:8000
     depends_on:
       - db
+    environment:
+      - "DJANGO_SECRET_KEY=si(q@=3v9js^+r_f(^v!zaih6(s=b4$$(!iqds=26_fodar4&k1"
+      - "DJANGO_DEBUG=True"
 
   db:
     image: postgres:11
