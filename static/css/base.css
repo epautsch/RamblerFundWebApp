@@ -112,3 +112,27 @@
 	background-color: #000000 !important;
 	color: white;
 }
+
+.mission-col-full {
+	border-top: #942929 2px solid !important;
+}
+
+.button-col-full {
+	border-top: #942929 2px solid !important;
+}
+
+.btn-xl {
+	padding: 30px;
+	background-color: #000000;
+	font-size: 20px;
+}
+
+.linkedin-btn {
+	color: inherit;
+	padding-right: 5px;
+}
+
+.instagram-btn {
+	color: inherit;
+	padding-left: 5px;
+}

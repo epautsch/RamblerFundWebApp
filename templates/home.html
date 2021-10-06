@@ -15,7 +15,7 @@
             <div class="carousel-caption d-none d-sm-block text-right mb-5">
               <h1 class="display-3">Heading One</h1>
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis, repellendus beatae aspernatur architecto sequi, voluptas vel quia saepe nesciunt.</p>
-              <a href="#" class="btn btn-danger btn-lg">Log In</a>
+              <a href="{% url 'account_login' %}" class="btn btn-danger btn-lg">Log In</a>
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="carousel-caption d-none d-sm-block mb-5">
               <h1 class="display-3">Heading Two</h1>
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis, repellendus beatae aspernatur architecto sequi, voluptas vel quia saepe nesciunt.</p>
-              <a href="#" class="btn btn-primary btn-lg">Recent Reports</a>
+              <a href="{% url 'macro' %}" class="btn btn-primary btn-lg">Recent Reports</a>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@
             <div class="carousel-caption d-none d-sm-block text-right mb-5">
               <h1 class="display-3">Heading Three</h1>
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis, repellendus beatae aspernatur architecto sequi, voluptas vel quia saepe nesciunt.</p>
-              <a href="#" class="btn btn-success btn-lg">Portfolio</a>
+              <a href="{% url 'portfolio' %}" class="btn btn-success btn-lg">Portfolio</a>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
   </section>
 
   <section id="mission-section">
-    <div class="container">
+    <div class="container mission-col-full">
       <div class="row align-items-center">
         <div class="col-md-6">
             <h2>Our Mission</h2>
@@ -127,12 +127,12 @@
             <p>RIF members learn about different finance topics and create investment pitches. At the end of each semester, industry professionals are invited to watch the students deliver their pitches and ask questions.</p>
         </div>
         <div class="col-md-6">
-          <img src="{% static 'images/GuyGivingPresentation.png' %}" alt="" class="img-fluid mb-3 rounded-circle">
+          <img src="{% static 'images/GuyGivingPresentation.png' %}" alt="" class="img-fluid mt-3 mb-3 rounded-circle">
         </div>
       </div>
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img src="{% static 'images/GroupTalking1.png' %}" alt="" class="img-fluid mt-3 rounded-circle">
+          <img src="{% static 'images/GroupTalking1.png' %}" alt="" class="img-fluid mt-3 mb-3 rounded-circle">
         </div>
         <div class="col-md-6">
           <p>Taking advantage of Loyola 's location in downtown Chicago, RIF has integrated itself within the Chicagoland finance community. Alumni and other professionals regularly attend RIF events, such as panel discussions and networking round robins.</p>
@@ -143,19 +143,15 @@
   </section>
 
   <section id="button-section">
-    <div class="container">
+    <div class="container button-col-full">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <button class="btn btn-dark" type="button">Meet The Team</button>
-          <br>
-          <br>
-          <button class="btn btn-dark" type="button">View The Portfolio</button>
-          <br>
-          <br>
-          <button class="btn btn-dark" type="button">Get Involved</button>
+          <a href="{% url 'team' %}" class="btn btn-dark btn-xl btn-block mt-3">Meet The Team</a>
+          <a href="{% url 'team' %}" class="btn btn-dark btn-xl btn-block">View The Portfolio</a>
+          <a href="{% url 'team' %}" class="btn btn-dark btn-xl btn-block mb-3">Get Involved</a>
         </div>
         <div class="col-md-6">
-          <img src="{% static 'images/GroupTalking2.png' %}" alt="" class="img-fluid mt-3 rounded-circle">
+          <img src="{% static 'images/GroupTalking2.png' %}" alt="" class="img-fluid mt-3 mb-3 rounded-circle">
         </div>
       </div>
     </div>
