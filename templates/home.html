@@ -1,15 +1,163 @@
 {% extends '_base.html' %}
 {% load static %}
-{% block title %}Home{% endblock title %}
+{% block title %}Rambler Home{% endblock title %}
 {% block content %}
-<h1>Homepage</h1>
-<img src="{% static 'images/rif.png' %}" alt="" class="rif_logo">
-{% if user.is_authenticated %}
-Hi {{ user.email }}!
-<p><a href="{% url 'logout' %}">Log Out</a></p>
-{% else %}
-<p>You are not logged in</p>
-<a href="{% url 'login' %}">Log In</a>
-<a href="{% url 'signup' %}">Sign Up</a>
-{% endif %}
+<section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading One</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis, repellendus beatae aspernatur architecto sequi, voluptas vel quia saepe nesciunt.</p>
+              <a href="#" class="btn btn-danger btn-lg">Log In</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Heading Two</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis, repellendus beatae aspernatur architecto sequi, voluptas vel quia saepe nesciunt.</p>
+              <a href="#" class="btn btn-primary btn-lg">Recent Reports</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading Three</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis, repellendus beatae aspernatur architecto sequi, voluptas vel quia saepe nesciunt.</p>
+              <a href="#" class="btn btn-success btn-lg">Portfolio</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- <header id="home-section">
+    <div class="dark-overlay">
+      <div class="home-inner container" id="home-inner">
+        <div class="row">
+          <div class="col-lg-8 d-none d-lg-block">
+            <h1 class="display-4" id="title"><strong>RAMBLER</strong> INVESTMENT FUND</h1>
+            <div class="d-flex">
+              <div class="p-4 align-self-start" id="title">
+                Preparing Loyola University of Chicago's Next Generation of Financial Leaders
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> -->
+
+  <section id="explore-head-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">Test Test</h1>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quisquam tempore maxime provident impedit expedita cupiditate, quam nostrum beatae magni.</p>
+          <a href="#" class="btn-btn-outline-secondary">Explore the portfolio!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonial-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>RIF has been a great opportunity to meet and see investment skill development first hand. The program should improve career options for you, in addition to exposing you to an important skill set. I’d encourage you to get involved.</p>
+            <footer class="blockquote-footer">
+              Taylor O'Malley,
+              <cite title="Source Title">
+                President, Balyasny Asset Management
+              </cite>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'images/TaylorOmalleyHeadshot.png' %}" alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="{% static 'images/JacobMunozHeadshot.png' %}" alt="" class="img-fluid ml-5 mb-3 rounded-circle">
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>A world-class education requires experiential learning and mentorship from industry professionals – look no further than RIF. It provides a rare opportunity for students to put capital at risk while signaling to the employer marketplace that Loyola is serious about finance. I’m delighted to have met many ambitious RIF members and listen to their compelling investment pitches.</p>
+            <footer class="blockquote-footer">
+              Jacob Munoz,
+              <cite title="Source Title">
+                Investment Banking VP, Goldman Sachs
+              </cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2>Our Mission</h2>
+            <p>Founded in 2014, the Rambler Investment Fund (RIF) is Loyola University Chicago’s student managed investment fund, managing over $1,000,000 of the university’s endowment. RIF aims to enhance the education of students through experiential learning. All members have the opportunity to create professional-grade investment pitches and aid in the administration of the fund.</p>
+            <p>RIF’s primary mission is to educate its members on finance, economics, and other business topics. Unlike many other student managed funds, RIF does not have any minimum requirements to join and is open to all Loyola University students, regardless of major or prior experience level.</p>
+            <p>RIF members learn about different finance topics and create investment pitches. At the end of each semester, industry professionals are invited to watch the students deliver their pitches and ask questions.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'images/GuyGivingPresentation.png' %}" alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="{% static 'images/GroupTalking1.png' %}" alt="" class="img-fluid mt-3 rounded-circle">
+        </div>
+        <div class="col-md-6">
+          <p>Taking advantage of Loyola 's location in downtown Chicago, RIF has integrated itself within the Chicagoland finance community. Alumni and other professionals regularly attend RIF events, such as panel discussions and networking round robins.</p>
+          <p>The Rambler Investment Fund is headquartered in the CME Group Foundation Business Analytics Lab inside the Schreiber Center at Loyola's Water Tower Campus. The lab's resources, including access to Thomson Reuters Eikon and S&P Capital IQ, are available to students. RIF provides instruction on how to use these resources in addition to educational workshops on finance concepts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="button-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <button class="btn btn-dark" type="button">Meet The Team</button>
+          <br>
+          <br>
+          <button class="btn btn-dark" type="button">View The Portfolio</button>
+          <br>
+          <br>
+          <button class="btn btn-dark" type="button">Get Involved</button>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'images/GroupTalking2.png' %}" alt="" class="img-fluid mt-3 rounded-circle">
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock content %}
