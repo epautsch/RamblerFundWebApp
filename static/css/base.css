@@ -60,10 +60,26 @@
 
 #login-section {
 	padding-top: 150px;
-	margin-left: 10px;
+	padding-left: 10px;
 }
 
 .loginconfirm {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#logout-section {
+	padding-top: 150px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+}
+
+#signup-section {
+	padding-top: 150px;
+	padding-left: 10px;
+}
+
+.signupconfirm {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
