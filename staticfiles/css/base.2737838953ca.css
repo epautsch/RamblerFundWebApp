@@ -1,0 +1,94 @@
+.navbar {
+	border-bottom: #000000 3px solid;
+	background-color: #000000;
+}
+
+.nav-link {
+	color: white !important;
+	text-transform: uppercase;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+.carousel-item {
+	height:  450px;
+}
+
+.carousel-image-1 {
+	background:  url("/static/images/background.b9c12e02e336.png");
+	background-size: cover;
+}
+
+.carousel-image-2 {
+	background: url("/static/images/lights.7a9f214177f6.jpg");
+	background-size: cover;
+}
+
+.carousel-image-3 {
+	background: url("/static/images/media.78d7b0dfa3e3.jpg");
+	background-size: cover;
+}
+
+/*#home-section {
+	background: url("/static/images/background.b9c12e02e336.png");
+	background-repeat: no-repeat;
+	background-size:  cover;
+	background-attachment: fixed;
+	min-height: 700px;
+}
+
+#home-section .dark-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 700px;
+	background: rgba(0, 0, 0, 0);
+}
+
+#home-section #home-inner {
+	background: rgba(182, 21, 21, 0.3);
+}
+
+#home-section #title {
+	color: white;
+}
+
+#home-section .home-inner {
+	padding-top: 150px;
+}*/
+
+#login-section {
+	padding-top: 150px;
+	padding-left: 10px;
+}
+
+.loginconfirm {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#logout-section {
+	padding-top: 150px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+}
+
+#signup-section {
+	padding-top: 150px;
+	padding-left: 10px;
+}
+
+.signupconfirm {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#about-section {
+	padding-top: 150px;
+}
+
+#main-footer {
+	background-color: #000000 !important;
+	color: white;
+}
