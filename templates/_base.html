@@ -13,7 +13,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
-  {% block title %}<title>RIF Home Test Page</title>{% endblock title %}
+  <title>{% block title %}RIF Home Test Page{% endblock title %}</title>
 </head>
 
 <body>
