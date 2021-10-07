@@ -29,15 +29,15 @@
 	background-size: cover;
 }
 
-/*#home-section {
-	background: url('/static/images/background.png');
+#about-display-section {
+	background: url('/static/images/computer_lab.png');
 	background-repeat: no-repeat;
-	background-size:  cover;
+	background-size: cover;
 	background-attachment: fixed;
-	min-height: 700px;
+	min-height: 475px;
 }
 
-#home-section .dark-overlay {
+#about-display-section .dark-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -46,17 +46,20 @@
 	background: rgba(0, 0, 0, 0);
 }
 
-#home-section #home-inner {
-	background: rgba(182, 21, 21, 0.3);
+#about-display-section #about-inner {
+	background: rgba(0, 0, 0, 0.7);
+	width: 50%;
+	margin-right: 0px;
+	min-height: 475px;
 }
 
-#home-section #title {
+#about-display-section #title {
 	color: white;
 }
 
-#home-section .home-inner {
+#about-display-section .about-inner {
 	padding-top: 150px;
-}*/
+}
 
 #login-section {
 	padding-top: 150px;
@@ -84,9 +87,9 @@
 	margin-bottom: 20px;
 }
 
-#about-section {
+/*#about-section {
 	padding-top: 150px;
-}
+}*/
 
 #team-section {
 	padding-top: 150px;

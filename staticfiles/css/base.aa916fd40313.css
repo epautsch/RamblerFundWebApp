@@ -15,26 +15,26 @@
 }
 
 .carousel-image-1 {
-	background:  url('/static/images/background.png');
+	background:  url("/static/images/background.b9c12e02e336.png");
 	background-size: cover;
 }
 
 .carousel-image-2 {
-	background: url('/static/images/lights.jpg');
+	background: url("/static/images/lights.7a9f214177f6.jpg");
 	background-size: cover;
 }
 
 .carousel-image-3 {
-	background: url('/static/images/media.jpg');
+	background: url("/static/images/media.78d7b0dfa3e3.jpg");
 	background-size: cover;
 }
 
 #about-display-section {
-	background: url('/static/images/computer_lab.png');
+	background: url("/static/images/computer_lab.0cfe0a84971b.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	min-height: 475px;
+	min-height: 400px;
 }
 
 #about-display-section .dark-overlay {
@@ -47,10 +47,10 @@
 }
 
 #about-display-section #about-inner {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(182, 21, 21, 0.3);
 	width: 50%;
 	margin-right: 0px;
-	min-height: 475px;
+	min-height: 400px;
 }
 
 #about-display-section #title {

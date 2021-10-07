@@ -3,9 +3,27 @@
 {% block title %}About{% endblock title %}
 
 {% block content %}
+<section id="about-display-section">
+	<div class="dark-overlay">
+		<div class="about-inner container" id="about-inner">
+			<div class="row">
+				<div class="col-md-10 d-none d-md-block" align="center">
+					<h1 class="display-4" id="title"><strong>About RIF</strong></h1>
+					<div class="p-4 align-self-start" id="title">
+							Managing such a large portfolio is no easy task, which is why we employ the knowledge and perspectives of numerous students and faculty to pursue our goals throughout the semester.
+						</div>
+					<div class="d-flex">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section id="about-section">
 	<h1>About Page</h1>
-	<iframe src="{% static 'pdfs/inflation.pdf#toolbar=0&navpanes=0' %}" style="width:320px; height:440px;" frameborder="0"></iframe>
+	<iframe src="{% static 'pdfs/inflation.pdf#toolbar=0&navpanes=0' %}" style="width:320px; height:440px; overflow: hidden;" scrolling="no" frameborder="0"></iframe>
 	<a href="{% static 'pdfs/erikPautschResume.pdf' %}">My Resume</a>
 </section>
 {% endblock content %}
