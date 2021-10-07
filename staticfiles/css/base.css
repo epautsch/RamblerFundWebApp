@@ -61,6 +61,10 @@
 	padding-top: 150px;
 }
 
+.about-macro-full {
+	border-bottom: #942929 2px solid !important;
+}
+
 #login-section {
 	padding-top: 150px;
 	padding-left: 10px;
@@ -133,6 +137,14 @@
 .linkedin-btn {
 	color: inherit;
 	padding-right: 5px;
+}
+
+.fa-linkedin {
+	transition: transform .2s;
+}
+
+.fa-linkedin:hover {
+	transform: scale(1.5);
 }
 
 .instagram-btn {

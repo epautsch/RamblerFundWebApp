@@ -9,7 +9,7 @@
 			<div class="row">
 				<div class="col-md-10 d-none d-md-block" align="center">
 					<h1 class="display-4" id="title"><strong>About RIF</strong></h1>
-					<div class="p-4 align-self-start" id="title">
+					<div class="p-4 align-self-start text-justify" id="title">
 							Managing such a large portfolio is no easy task, which is why we employ the knowledge and perspectives of numerous students and faculty to pursue our goals throughout the semester.
 						</div>
 					<div class="d-flex">
@@ -21,9 +21,35 @@
 	</div>
 </section>
 
-<section id="about-section">
-	<h1>About Page</h1>
-	<iframe src="{% static 'pdfs/inflation.pdf#toolbar=0&navpanes=0' %}" style="width:320px; height:440px; overflow: hidden;" scrolling="no" frameborder="0"></iframe>
-	<a href="{% static 'pdfs/erikPautschResume.pdf' %}">My Resume</a>
+<section id="about-macro-section">
+	<div class="container about-macro-full">
+		<div class="row align-items-center">
+			<!-- <div class="col-md-1">
+				
+			</div> -->
+			<div class="col-md-6 text-justify">
+				<h2>Macroeconomics</h2>
+				<p>The pitch process begins in our Department of Macroeconomic Research. The macro team, which creates the fund’s macroeconomic outlook, serves as the rudder for the fund’s investment theses. Junior and senior analysts alike are encouraged to create a thorough report detailing their macroeconomic outlook. Students will analyze economic indicators, geopolitical factors, and current trends to form their thesis with the help of training resources and senior analysts. We support all opinions so long as they are factually supported. The macro team, as previously mentioned, works on an identical report to guide the fund.</p>
+			</div>
+			<div class="col-md-6 py-5 mx-auto">
+				<iframe src="{% static 'pdfs/inflation.pdf#toolbar=0&navpanes=0' %}" style="width:450px; height:550px; overflow: hidden;" scrolling="no" frameborder="0"></iframe>
+			</div>
+			<!-- <div class="col-md-1">
+				
+			</div> -->
+		</div>
+	</div>
+	<!-- <a href="{% static 'pdfs/erikPautschResume.pdf' %}">My Resume</a> -->
+</section>
+
+<section id="about-pitches-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Pitches</h2>
+				<p>Students then decide what industries should do well given their macroeconomic outlook. Once these are chosen, they narrow down their search to a specific company, commodity, or asset. Once their investment is selected, they will begin researching and creating a presentation on their investment. Students will have the opportunity to present their pitch and to meet industry professionals for feedback and networking purposes at the “Round Robin” event. One week later, they will present their final draft to the board, and a handful will proceed to the final external pitch day. Historically, this final event has been attended by industry professionals, school faculty, and alumni. This allows the organization’s departments and selected pitches to have the opportunity to showcase their work. Each pitch provides the analyst with an excellent work sample for interviews and professional development. Below is an example of this. </p>
+			</div>
+		</div>
+	</div>
 </section>
 {% endblock content %}
