@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %}Rambler Home{% endblock title %}
 {% block content %}
-<section id="showcase">
+<section id="home-showcase-section">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -80,10 +80,10 @@
     </div>
   </section>
 
-  <section id="testimonial-section">
+  <section id="home-testimonial-section">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-6 testimonial1">
           <blockquote class="blockquote">
             <p>RIF has been a great opportunity to meet and see investment skill development first hand. The program should improve career options for you, in addition to exposing you to an important skill set. I’d encourage you to get involved.</p>
             <footer class="blockquote-footer">
@@ -94,13 +94,13 @@
             </footer>
           </blockquote>
         </div>
-        <div class="col-md-6">
-          <img src="{% static 'images/TaylorOmalleyHeadshot.png' %}" alt="" class="img-fluid mb-3 rounded-circle">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="{% static 'images/TaylorOmalleyHeadshot.png' %}" alt="" class="img-fluid mb-3 rounded">
         </div>
       </div>
       <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="{% static 'images/JacobMunozHeadshot.png' %}" alt="" class="img-fluid ml-5 mb-3 rounded-circle">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="{% static 'images/JacobMunozHeadshot.png' %}" alt="" class="img-fluid mb-3 rounded">
         </div>
         <div class="col-md-6">
           <blockquote class="blockquote">
@@ -126,13 +126,13 @@
             <p>RIF’s primary mission is to educate its members on finance, economics, and other business topics. Unlike many other student managed funds, RIF does not have any minimum requirements to join and is open to all Loyola University students, regardless of major or prior experience level.</p>
             <p>RIF members learn about different finance topics and create investment pitches. At the end of each semester, industry professionals are invited to watch the students deliver their pitches and ask questions.</p>
         </div>
-        <div class="col-md-6">
-          <img src="{% static 'images/GuyGivingPresentation.png' %}" alt="" class="img-fluid mt-3 mb-3 rounded-circle">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="{% static 'images/GuyGivingPresentation.png' %}" alt="" class="img-fluid mt-3 mb-3 rounded">
         </div>
       </div>
       <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="{% static 'images/GroupTalking1.png' %}" alt="" class="img-fluid mt-3 mb-3 rounded-circle">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="{% static 'images/GroupTalking1.png' %}" alt="" class="img-fluid mt-3 mb-3 rounded">
         </div>
         <div class="col-md-6">
           <p>Taking advantage of Loyola 's location in downtown Chicago, RIF has integrated itself within the Chicagoland finance community. Alumni and other professionals regularly attend RIF events, such as panel discussions and networking round robins.</p>
@@ -142,7 +142,7 @@
     </div>
   </section>
 
-  <section id="button-section">
+  <section id="home-button-section">
     <div class="container button-col-full">
       <div class="row align-items-center">
         <div class="col-md-6">

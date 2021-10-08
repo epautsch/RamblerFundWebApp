@@ -10,21 +10,21 @@
 	padding-right: 1rem !important;
 }
 
-.carousel-item {
+#home-showcase-section .carousel-item {
 	height:  450px;
 }
 
-.carousel-image-1 {
+#home-showcase-section .carousel-image-1 {
 	background:  url('/static/images/background.png');
 	background-size: cover;
 }
 
-.carousel-image-2 {
+#home-showcase-section .carousel-image-2 {
 	background: url('/static/images/lights.jpg');
 	background-size: cover;
 }
 
-.carousel-image-3 {
+#home-showcase-section .carousel-image-3 {
 	background: url('/static/images/media.jpg');
 	background-size: cover;
 }
@@ -61,9 +61,49 @@
 	padding-top: 150px;
 }
 
+#about-macro-section .col-md-6 {
+	font-size: 1.3em;
+}
+
+/*width:450px; height:550px; overflow: hidden; scrolling=no;*/
+#about-macro-section .pdftest {
+	width: 450px;
+	/*height: 550px;*/
+	overflow: hidden;
+}
+
 .about-macro-full {
 	border-bottom: #942929 2px solid !important;
 }
+
+
+#about-pitches-section {
+	font-size: 1.3em;
+}
+
+.about-pitches-full {
+	border-bottom: #942929 2px solid !important;
+}
+
+#about-portfolio-section .col-md-6 {
+	font-size: 1.3em;
+}
+
+#about-portfolio-section .pdftest {
+	width: 450px;
+}
+
+.about-portfolio-full {
+	border-bottom: #942929 2px solid !important;
+}
+
+#about-team-section .col1 {
+	font-size: 1.3em;
+}
+
+/*#about-team-section .btn {
+
+}*/
 
 #login-section {
 	padding-top: 150px;
@@ -128,7 +168,13 @@
 	border-top: #942929 2px solid !important;
 }
 
-.btn-xl {
+#home-button-section .btn-xl {
+	padding: 30px;
+	background-color: #000000;
+	font-size: 20px;
+}
+
+#about-team-section .btn-md {
 	padding: 30px;
 	background-color: #000000;
 	font-size: 20px;
@@ -151,3 +197,4 @@
 	color: inherit;
 	padding-left: 5px;
 }
+

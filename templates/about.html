@@ -21,18 +21,19 @@
 	</div>
 </section>
 
+<!-- col 2x6 -->
 <section id="about-macro-section">
 	<div class="container about-macro-full">
-		<div class="row align-items-center">
+		<div class="row align-items-top pt-5">
 			<!-- <div class="col-md-1">
 				
 			</div> -->
-			<div class="col-md-6 text-justify">
-				<h2>Macroeconomics</h2>
-				<p>The pitch process begins in our Department of Macroeconomic Research. The macro team, which creates the fund’s macroeconomic outlook, serves as the rudder for the fund’s investment theses. Junior and senior analysts alike are encouraged to create a thorough report detailing their macroeconomic outlook. Students will analyze economic indicators, geopolitical factors, and current trends to form their thesis with the help of training resources and senior analysts. We support all opinions so long as they are factually supported. The macro team, as previously mentioned, works on an identical report to guide the fund.</p>
+			<div class="col-md-6">
+				<h2 class="text-center">Macroeconomics</h2>
+				<p class="text-justify">The pitch process begins in our Department of Macroeconomic Research. The macro team, which creates the fund’s macroeconomic outlook, serves as the rudder for the fund’s investment theses. Junior and senior analysts alike are encouraged to create a thorough report detailing their macroeconomic outlook. Students will analyze economic indicators, geopolitical factors, and current trends to form their thesis with the help of training resources and senior analysts. We support all opinions so long as they are factually supported. The macro team, as previously mentioned, works on an identical report to guide the fund.</p>
 			</div>
-			<div class="col-md-6 py-5 mx-auto">
-				<iframe src="{% static 'pdfs/inflation.pdf#toolbar=0&navpanes=0' %}" style="width:450px; height:550px; overflow: hidden;" scrolling="no" frameborder="0"></iframe>
+			<div class="col-md-6 py-4 d-flex justify-content-center">
+				<iframe class="pdftest" src="{% static 'pdfs/inflation.pdf#toolbar=0&navpanes=0' %}" style="" scrolling="no" frameborder="0"></iframe>
 			</div>
 			<!-- <div class="col-md-1">
 				
@@ -42,12 +43,46 @@
 	<!-- <a href="{% static 'pdfs/erikPautschResume.pdf' %}">My Resume</a> -->
 </section>
 
+<!-- col 1x12 -->
 <section id="about-pitches-section">
-	<div class="container">
+	<div class="container about-pitches-full">
 		<div class="row">
-			<div class="col-md-12">
-				<h2>Pitches</h2>
-				<p>Students then decide what industries should do well given their macroeconomic outlook. Once these are chosen, they narrow down their search to a specific company, commodity, or asset. Once their investment is selected, they will begin researching and creating a presentation on their investment. Students will have the opportunity to present their pitch and to meet industry professionals for feedback and networking purposes at the “Round Robin” event. One week later, they will present their final draft to the board, and a handful will proceed to the final external pitch day. Historically, this final event has been attended by industry professionals, school faculty, and alumni. This allows the organization’s departments and selected pitches to have the opportunity to showcase their work. Each pitch provides the analyst with an excellent work sample for interviews and professional development. Below is an example of this. </p>
+			<div class="col-md-12 py-5">
+				<h2 class="text-center">Pitches</h2>
+				<p class="text-justify">Students then decide what industries should do well given their macroeconomic outlook. Once these are chosen, they narrow down their search to a specific company, commodity, or asset. Once their investment is selected, they will begin researching and creating a presentation on their investment. Students will have the opportunity to present their pitch and to meet industry professionals for feedback and networking purposes at the “Round Robin” event. One week later, they will present their final draft to the board, and a handful will proceed to the final external pitch day. Historically, this final event has been attended by industry professionals, school faculty, and alumni. This allows the organization’s departments and selected pitches to have the opportunity to showcase their work. Each pitch provides the analyst with an excellent work sample for interviews and professional development. Below is an example of this. </p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- col 2x6 -->
+<section id="about-portfolio-section">
+	<div class="container about-portfolio-full">
+		<div class="row align-items-top pt-5">
+			<div class="col-md-6 py-4 d-flex justify-content-center">
+				<iframe class="pdftest" src="{% static 'pdfs/pdftest2.pdf#toolbar=0&navpanes=0' %}" style="" scrolling="no" frameborder="0"></iframe>
+			</div>
+			<div class="col-md-6">
+				<h2 class="text-center">Portfolio</h2>
+				<p class="text-justify">Part of RIF’s constitution is to invest in every idea that members pitch. The fund's portfolio management team uses an optimization model to allocate funds to these assets at the end of every semester. This is when the macro research department’s work comes in - after analyzing the macroeconomic outlook, the portfolio management team tailors the portfolio. Thus, each investment has a calculated weight to minimize lost and maximize return.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- col 1x12 -->
+<section id="about-team-section">
+	<div class="container about-team-full">
+		<div class="row">
+			<div class="col-md-12 pt-5 col1">
+				<p class="text-justify">
+					This entire process occurs within one semester. Though it might sound like a lot of work for a busy student, the learning along the way is invaluable. After creating several macro reports and stock pitches, students can expect a marked increase in their skills relating to public speaking, capital markets, research, and more. Last but not least are the RIF members - we pride ourselves on a culture of support and inclusion to help each member attain their goals toward a career in finance. We strive for excellence and challenge each other to reach our fullest potential.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 d-flex justify-content-center pb-5">
+				<a href="{% url 'team' %}" class="btn btn-md btn-dark">Meet The Team</a>
 			</div>
 		</div>
 	</div>
